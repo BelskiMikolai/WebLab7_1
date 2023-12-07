@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@media only screen and (max-width: 768px) {
+    header img {
+        width: 40% !important;
+    }
+
+    header h1 > *:not(img) {
+    display: none;  
+    }
+    main .benefits h2{
+        font-size: 2.5em !important;
+    }
+    main .connection {
+        grid-template-columns: minmax(200px, 1fr)!important;
+    }
+    main .benefits img{
+        width: 60% !important;
+    }
+    header .menu a {
+        font-size: 0.8em !important;
+    }
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url("img/poster.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 10%;
+}
+header img{
+    vertical-align: middle;
+    width: 150px;
+    margin-right: 30px;
+}
+header h1{
+    font-size: 9em;
+    letter-spacing: -10px;
+    line-height: 0.6em;
+    margin: 0 0 22% 0;
+
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+}
+header h1 span{
+    font-size: 1.2em;
+    line-height: 0px;
+
+    vertical-align: middle;
+    font-weight: 300;
+    color: #99DE37;
+}
+header .menu {
+    display: flex;
+    align-items: center;
+
+    padding: 0px;
+}
+
+
+header .menu a {
+    flex-grow: 1;
+    font-size: 1em;
+    background-color: rgb(248, 248, 248);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    padding: 0.5em;
+    border-radius: 2em 2em 0 0;
+}
+header .menu a:hover {
+    background: white;
+}
+main .benefits {
+    padding: 5% 10%;
+    background-color: #ffffff;
+}
+main .benefits h2{
+    font-size: 4em;
+    margin: 0px;
+
+}
+main .benefits ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style: none;
+}
+main .benefits li{
+    flex: 1 1 330px;
+    line-height: 1em;
+    text-align: center;
+    color: #000000;
+
+}
+main .benefits img{
+    border-radius: 30px;
+    width: 300px;
+}
+main .poster {
+    background-image: url(img/forest_road.png);
+    background-position:left;
+    background-size: cover;
+    border-top: #99DE37 solid 30px;
+    padding: 5%;
+}
+main .poster h2{
+    color: white;
+    font-size: 4em;
+}
+
+main .connection {
+    padding: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+
+main .connection h2{
+    font-size: 2em;
+}
+main .connection img{
+    grid-row: span 2;
+    width: 60%;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: 20px 20px #99DE37 ;
+
+}
+
+
+footer {
+    padding: 0 3%;
+    background-color: #6c8c3d;
+    color: #d6d6d6;
+    text-align:center
+}
+.info-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-footer ul {
+    padding: 0px;
+    list-style: none;
+
+}
+.info-footer h3 {
+    line-height: 0px;
+    color: white;
+}
+.info-footer a {
+    color: white;
+}
+.info-footer .contact {
+    flex: 9 1 300px;
+}
+.footer-logo {
+    flex: 1 9 100px;
+}
+.info-footer img {
+    max-width: 80px;
+}
+.menu-footer {
+    border-bottom: white solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+.menu-footer a{
+
+    text-decoration: none;
+    color: white;
+}
+.menu-footer a:hover{
+    text-decoration:underline;
+}
